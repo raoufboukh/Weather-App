@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+
+
+.card{
+    background-image:linear-gradient(135deg, #00feba, #5b548a);
+    width: 370px;
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.card .search{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card .search input{
+    flex-basis: 70%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+
+.card .search img{
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card .weather,
+.card .heat{
+    text-align: center;
+    color: white;
+}
+
+.card .weather img{
+    width: 55%;
+}
+
+.card .heat h3{
+    font-size: 45px;
+}
+
+.card .heat p{
+    font-size: 40px;
+}
+
+.card .information{
+    display: flex;
+    color: white;
+}
+.card .information.done{
+    margin-top: 40px;
+}
+.card .information > div{
+    flex-basis: 50%;
+}
+.card .information .humidity,
+.card .information .wind{
+    display: flex;
+}
+
+
+.card .information .humidity .img,
+.card .information .wind .img{
+    flex-basis: 30%;
+}
+
+.card .information .humidity .info,
+.card .information .wind .info{
+    flex-basis: 70%;
+    font-size: 21px;
+}
+
+.card .information .humidity img,
+.card .information .wind img{
+    width: 65%;
+}
+
+.card .information .humidity .info p:first-child,
+.card .information .wind .info p:first-child{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+@media(max-width:400px){
+    .card{
+        width: 300px;
+    }
+    .card .information .humidity .info,
+    .card .information .wind .info{
+        flex-basis: 70%;
+        font-size: 16px;
+    }
+    .card .information .humidity .info p:first-child,
+    .card .information .wind .info p:first-child{
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
